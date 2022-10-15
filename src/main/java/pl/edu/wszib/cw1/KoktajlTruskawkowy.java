@@ -27,15 +27,14 @@ public class KoktajlTruskawkowy extends Koktajl implements Smakowalne  {
 
     @Override
     public void pij() {
-        System.out.println("Pijalne koktajl" + smak());
-        String message = String.format("Pijalny koktajl %s", smak());
-        System.out.println(message);
+        System.out.println("Koktajl o cechach "+rodzajTruskawki.cecha() + " i slodkosci "+ rodzajSmaku.slodkosc() + " i smaku "+ smak());
+        //String message = String.format("Pijalny koktajl %s", smak());
+       // System.out.println(message);
     }
 
     @Override
-    public String smak(){
-        String tekst = String.format(" o cechach "+rodzajTruskawki.cecha() + " i slodkosci "+ rodzajSmaku.slodkosc());
-        return  tekst;
+    public RodzajSmaku smak(){
+        return rodzajSmaku;
     }
 }
 
