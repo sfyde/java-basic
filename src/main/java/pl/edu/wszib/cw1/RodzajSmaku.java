@@ -17,4 +17,6 @@ public enum RodzajSmaku {
     public int slodkosc(){
         return slodkosc;
     }
+
+
 }
